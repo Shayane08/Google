@@ -1,0 +1,63 @@
+html, body {
+	font-family: arial,sans-serif;
+	color: #222;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+    height: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: #222;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul {
+	display: flex;
+	align-items: center;
+
+}
+
+
+nav {
+	display: flex;
+
+}
+
+
+section {
+	display:flex;
+	flex-direction: column; 
+	align-items: center;
+}
+
+.log-menu {
+	justify-content: flex-end;
+}
+
+.footer-links {
+	justify-content: space-between;
+
+}
+
+#log-button a{
+	color:white;
+	background-color: #366ce5;
+
+	}
+
+
+footer {
+		border-top:1px solid black;
+		background-color:#efefef;
+
+
+
+
+}
+
