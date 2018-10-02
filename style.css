@@ -1,14 +1,22 @@
-html, body {
+html {
 	font-family: arial,sans-serif;
 	color: #222;
+	font-size: 13px;
+    height: 100%;
+    width: auto;
+}
+
+body {
+    margin:0;
+    height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	font-size: 13px;
-    height: 100%;
+    overflow: auto;
+	min-width: 980px;
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
@@ -23,27 +31,21 @@ li {
 ul {
 	display: flex;
 	align-items: center;
-}
-
-nav {
-	width:100%;
-	display: flex;
-	justify-content: space-between;
-	height: 30px;
+	padding:0;
 }
 
 nav a {
 	color: rgba(0,0,0,0.87);
 }
 
-section {
+.log-menu {
 	display:flex;
-	flex-direction: column; 
-	align-items: center;
+	justify-content: flex-end;
+	margin: 10px 0px;
 }
 
-.log-menu {
-	justify-content: flex-end;
+header li{
+	padding-left: 15px;
 }
 
 #log-button {
@@ -53,10 +55,49 @@ section {
 	height: 30px;
 	border-radius: 2px;
 	border: none;
+	margin-right: 30px;
 	}
 
 #log-button:hover {
 	box-shadow: 0px 1px 0px #bbb;
+}
+
+
+section {
+	display:flex;
+	flex-direction: column; 
+	align-items: center;
+	padding-bottom: 220px;
+}
+
+#logo {
+	margin-bottom: 25px;
+}
+
+form {
+	display: block;
+	width: 428px;
+	height:38px;
+	margin-bottom: 29px;
+}
+
+input {
+	width: 100%;
+	height: 100%;
+	border-radius: 2px;
+	border:0.5px solid #efefef;
+	box-shadow: 0px 2px 2px #ddd;
+	background-image: url("img/micro.png");
+	background-repeat: no-repeat;
+	background-position: 405px center;
+}
+
+input:hover {
+	box-shadow: 0px 2px 2px #666;
+}
+
+form:focus {
+	box-shadow: none;
 }
 
 .search, .chance {
@@ -73,42 +114,32 @@ section {
 	color:black;
 	border-color: #757575;
 	background-color: #efefef;
-	border:1px solid #666;
+	border:1px solid #bbb;
 	box-shadow: 0px 1px 0px #bbb;
 }
 
 footer {
-	height: 40px;
+	min-height: 40px;
 	border-top:1px solid #ddd;
 	background-color:#efefef;
 	display:flex;
 	align-items: center;
 	justify-content: space-between;
+	width:100%;
+	margin-top:10px;
 }
 
-footer a {
+footer li {
 	color: #666;
-
+	line-height: 40px;
+	padding-left: 27px;
+	white-space: nowrap;
 }
 
-form {
-	display: block;
-	width: 428px;
-	height:38px;
-	margin-bottom: 20px;
-}
-
-input {
-	width: 100%;
-	height: 100%;
-	border-radius: 2px;
-	border:0.5px solid #efefef;
-	box-shadow: 0px 1px 1px #666;
-	background-image: url("img/micro.png");
-	background-repeat: no-repeat;
-	background-position: 405px center;
-}
-
-input:hover {
-	box-shadow: 0px 2px 2px #666;
+#footer-links {
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+	height: 30px;
+	margin-right: 40px;
 }
