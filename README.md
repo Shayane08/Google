@@ -1,1 +1,1 @@
-Projet réalise par Hugo Raviere et Shayane Yakataly!
+Projet réalisé par Hugo Rivière et Shayane Yakataly !
